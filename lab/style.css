@@ -1,38 +1,67 @@
 /* Grid container for the navigation */
 nav {
-    display: grid;
-    grid-template-columns: auto 1fr auto; /* Three columns: auto for brand, 1fr for links, and auto for button */
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* Add some padding for spacing */
-    background-color: darkgrey; /* Add background color */
-    color: whitesmoke; /* Set text color */
-  }
-  
-  /* Style the brand */
-  .nav-brand {
-    font-size: 40px; /* Adjust font size */
-  }
-  
-  /* Style the links */
-  .nav-links {
-    display: flex;
-    justify-content: flex-end; /* Space out the links evenly */
-    
-  }
-  
-  /* Style each link */
-  .nav-links a {
-    padding: 0 5px; /* Adjust padding between links */
-  }
-  
-  /* Style the button */
-  button {
-    background-color: red; /* Set button background color */
-    color: white; /* Set button text color */
-    padding: 10px 20px; /* Adjust padding */
-    border: none; /* Remove border */
-    cursor: pointer; /* Add cursor pointer */
-  }
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 20px;
+  background-color: darkgrey;
+  color: whitesmoke;
+}
+
+/* Style the brand */
+.nav-brand {
+  font-size: 40px;
+  background-color: orange;
+}
+
+/* Style the links */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  background-color: yellow;
+}
+
+/* Style each link */
+.nav-links a {
+  padding: 0 5px;
+  background-color: lime;
+}
+
+/* Style the button */
+.sign-button {
+  background-color: red;
+  color: white;
+  padding: 22px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Additional body styles */
 body {
-    background-color: lightgrey;
+  background-color: lightgrey;
+  display: grid;
+  grid-template-areas:
+    "nav" "nav" "nav" "nav"
+    "aside main" "main main" "main main" "main main"
+    "footer footer footer footer";
+  grid-gap: 10px; /* chatGPT */
+}
+
+.proposition {
+  background-color: blueviolet;
+  text-align: center;
+  grid-area: aside main;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* Style the join button */
+.join-button {
+  background-color: black;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
 }
