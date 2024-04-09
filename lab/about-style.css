@@ -14,7 +14,7 @@ nav {
 .nav-links {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: center; /* Align items vertically */
 }
 
 .nav-links a {

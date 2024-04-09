@@ -14,7 +14,6 @@ nav {
 .nav-links {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 
 .nav-links a {
@@ -34,17 +33,6 @@ nav {
   color: black;
 }
 
-body {
-  background-color: lightgrey;
-  display: grid;
-  grid-template-areas:
-    "nav"
-    "side"
-    "main"
-    "footer";
-  grid-template-rows: auto auto 1fr auto;
-}
-
 .social-proof {
   grid-area: side;
   text-align: center;
@@ -57,34 +45,72 @@ body {
   height: 40px;
 }
 
-.proposition {
+body {
+  background-color: lightgrey;
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto 1fr auto;
+}
+
+.review {
   text-align: center;
-  grid-area: main;
-  padding: 20px;
   margin: auto;
-  max-width: 500px;
+  padding: 20px;
 }
 
-.proposition p {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+.review h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.join-button {
-  background-color: black;
-  color: white;
-  padding: 15px 30px;
+.review-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.review-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.review-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.review-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-card .thumbs-down {
+  margin-left: auto;
+}
+
+.review-card .thumbs-up,
+.review-card .thumbs-down {
   border: none;
-  border-radius: 20px;
   cursor: pointer;
-  font-size: 20px;
 }
 
-.join-button:hover {
-  background-color: white;
-  color: black;
+.review-card .thumbs-up:hover {
+  color: green;
+}
+
+.review-card .thumbs-down:hover {
+  color: red;
 }
 
 footer {
@@ -110,4 +136,10 @@ footer {
 .back-to-top:hover {
   background-color: white;
   color: black;
+}
+
+@media (max-width: 768px) {
+  .review-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
