@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About - OT World Recording Studios</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="bookings-style.css" />
+  </head>
+  <body>
     <nav>
-        <span class="nav-brand">OT World Recording Studios</span>
-        <nav class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="bookings.html">Bookings</a>
-            <a href="reviews.html">Reviews</a>
-        </nav>
-        <button class="sign-button">Login</button>
+      <span class="nav-brand">OT World Recording Studios</span>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="reviews.html">Reviews</a>
+      </nav>
+      <button class="sign-button">Login</button>
     </nav>
-
-    <aside>
-        <div class="social-proof">
-            <h2><i>Get in Tune with our Social Media!</i></h2>
-            <a href="https://www.instagram.com/otworldrecords/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="Instagram">
-            </a>
-        </div>
-    </aside>
-
     <main>
-        
+      <section class="cta-form">
+        <h2>JOIN NOW FOR BOOKINGS</h2>
+        <p>Join our exclusive club now for studio booking access!</p>
+        <form action="#" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="role">What best describes you?</label>
+          <select id="role" name="role">
+            <option value="...">...</option>
+            <option value="Artist">Artist</option>
+            <option value="Producer">Producer</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Singer-Songwriter">Singer-Songwriter</option>
+          </select>
+          <button type="submit">LET ME IN!</button>
+        </form>
+      </section>
     </main>
-
+    <aside>
+      <div class="social-proof">
+        <h2><i>Get in Tune with our Social Media!</i></h2>
+        <a href="https://www.instagram.com/otworldrecords/" target="_blank">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png"
+            alt="Instagram"
+          />
+        </a>
+      </div>
+    </aside>
     <footer>
-        &copy; 2024 - OTWorld LLC<br>
-        Designed and Developed by Malik Mai<br>
-        <button onclick="backToTop()" class="back-to-top">Back to Top</button>
+      &copy; 2024 - OTWorld LLC<br />
+      Designed and Developed by Malik Mai
     </footer>
-</body>
+  </body>
 </html>
