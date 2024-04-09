@@ -1,0 +1,38 @@
+/* Grid container for the navigation */
+nav {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Three columns: auto for brand, 1fr for links, and auto for button */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: darkgrey; /* Add background color */
+    color: whitesmoke; /* Set text color */
+  }
+  
+  /* Style the brand */
+  .nav-brand {
+    font-size: 40px; /* Adjust font size */
+  }
+  
+  /* Style the links */
+  .nav-links {
+    display: flex;
+    justify-content: flex-end; /* Space out the links evenly */
+    
+  }
+  
+  /* Style each link */
+  .nav-links a {
+    padding: 0 5px; /* Adjust padding between links */
+  }
+  
+  /* Style the button */
+  button {
+    background-color: red; /* Set button background color */
+    color: white; /* Set button text color */
+    padding: 10px 20px; /* Adjust padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add cursor pointer */
+  }
+body {
+    background-color: lightgrey;
+}
